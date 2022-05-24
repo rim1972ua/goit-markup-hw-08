@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <nav class="header__nav">
+                <a class="logo" href="./">Web<span class="logo-black">Studio</span></a>
+                <ul class="header__main-menu">
+                    <li><a class="header__menu-item" href="./index.html">Студия</a></li>
+                    <li><a class="header__menu-item header__menu-item--current" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="header__menu-item" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header-address">
+                <li>
+                    <a class="header-address__item" href="info@devstudio.com">
+                        <svg width="16" height="12" class="header-address__icon">
+                            <use href="./images/icons.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li>
+                    <a class="header-address__item" href="+380961111111">
+                        <svg width="10px" height="16px" class="header-address__icon">
+                            <use href="./images/icons.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 hidden>Наші роботи</h1>
+                <Ul class="filter">
+                    <li> <button class="filter__button" type="button">Все</button></li>
+                    <li> <button class="filter__button" type="button">Веб-сайты</button></li>
+                    <li> <button class="filter__button" type="button">Приложения</button></li>
+                    <li> <button class="filter__button" type="button">Дизайн</button></li>
+                    <li> <button class="filter__button" type="button">Маркетинг</button></li>
+                </Ul>
+                <ul class="samples">
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/technocrack-opt.jpg" alt="Технокряк" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Технокряк</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/poster-opt.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Постер New Orlean vs Golden Star</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/restaurant-opt.jpg" alt="Ресторан Seafood" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Ресторан Seafood</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/prime-opt.jpg" alt="Проект Prime" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Проект Prime</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/boxes-opt.jpg" alt="Проект Boxes" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Проект Boxes</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/noborders-opt.jpg" alt="Inspiration has no Borders" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Inspiration has no Borders</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/limitededition-opt.jpg" alt="Издание Limited Edition" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Издание Limited Edition</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/lab-opt.jpg" alt="Проект LAB" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Проект LAB</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples__item">
+                        <a class="samples__link" href="">
+                            <div class="samples__thumb">
+                            <img src="./images/growing-opt.jpg" alt="Growing Business" width="370">
+                            <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="samples__description">
+                                <h2 class="samples__name">Growing Business</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer__links">
+                <a class="logo footer__logo" href="./">Web<span class="logo-white">Studio</span></a>
+                <address class="footer-address">
+                    <ul>
+                        <li><a class="footer-address__item footer-address__item--address" href="https://bit.ly/3pXMvUd"
+                                target="_blank" rel="noopener noreferrer">г. Киев,
+                                пр-т
+                                Леси Украинки, 26</a> </li>
+                        <li><a class="footer-address__item footer-address__item--link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                        <li><a class="footer-address__item footer-address__item--tel" href="tel:+380961111111">+38 096 111
+                                11 11</a> </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="social">
+                <p class="social__invite">присоединяйтесь</p>
+                <a href="" class="social__link">
+                    <svg width="20" height="20" class="social__icon">
+                        <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="" class="social__link">
+                    <svg width="20" height="20" class="social__icon">
+                        <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                </a>
+                <a href="" class="social__link">
+                    <svg width="20" height="20" class="social__icon">
+                        <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="" class="social__link">
+                    <svg width="20" height="20" class="social__icon">
+                        <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="subscribe">
+                <p class="subscribe__invite">Подпишитесь на рассылку</p>
+                <form name="subscribe_form" autocomplete="off" action="">
+                    <label class="subscribe__lable">
+                        <input class="subscribe__input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="button-studio button-studio--subscribe" type="submit">Подписаться
+                        <svg width="24" height="24" class="send-icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

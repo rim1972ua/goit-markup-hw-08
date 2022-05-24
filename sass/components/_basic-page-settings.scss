@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-family-body;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+    background-color: $accent-white-color;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $main-headers-color;
+    margin-bottom: 50px;
+}
