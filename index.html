@@ -41,13 +41,25 @@
                     </a>
                 </li>
             </ul>
+            <button data-menu-button type="button" class="menu-button is-open"
+                aria-expanded="false" aria-controls="menu-container">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="icon-cross" href="./images/icons.svg#close-menu"></use>
+                    <use class="icon-menu" href="./images/icons.svg#mobile-menu"></use>
+                </svg>
+            </button>
         </div>
+        <!-- тимчасовий контейнер для меню -->
+        <div data-menu class="menu-container is-open" id="menu-container">
+            Меню
+        </div>
+        <!-- тимчасовий контейнер для меню -->
    </header>
     <main>
         <section class="section hero-section">
             <div class="container">
                 <h1 class="hero-section__title">Эффективные решения для вашего бизнеса</h1>
-                <button data-modal-open class="button-studio" type="button">Заказать услугу</button>
+                <button data-modal-open type="button" class="button-studio">Заказать услугу</button>
             </div>
         </section>
         <section class="section section-feature">
@@ -119,7 +131,7 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="section-team__list">
                     <li class="section-team__item">
-                        <img src="./images/igor-opt.jpg" alt="Игорь Демьяненко" width="270">
+                        <img src="./images/igor-mob.jpg" alt="Игорь Демьяненко" width="460">
                         <div class="section-team__member">
                             <h3 class="section-team__name">Игорь Демьяненко</h3>
                             <p class="section-team__role">Product Designer</p>
@@ -156,7 +168,7 @@
                         </div>
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/olga-opt.jpg" alt="Ольга Репина" width="270">
+                        <img src="./images/olga-mob.jpg" alt="Ольга Репина" width="460">
                         <div class="section-team__member">
                             <h3 class="section-team__name">Ольга Репина</h3>
                             <p class="section-team__role">Frontend Developer</p>
@@ -193,7 +205,7 @@
                         </div>
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/mykola-opt.jpg" alt="Николай Тарасов" width="270">
+                        <img src="./images/mykola-mob.jpg" alt="Николай Тарасов" width="460">
                         <div class="section-team__member">
                             <h3 class="section-team__name">Николай Тарасов</h3>
                             <p class="section-team__role">Marketing</p>
@@ -230,7 +242,7 @@
                         </div>
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/myhaylo-opt.jpg" alt="Михаил Ермаков" width="270">
+                        <img src="./images/myhaylo-mob.jpg" alt="Михаил Ермаков" width="460">
                         <div class="section-team__member">
                             <h3 class="section-team__name">Михаил Ермаков</h3>
                             <p class="section-team__role">UI Designer</p>

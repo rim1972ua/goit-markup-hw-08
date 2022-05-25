@@ -1,19 +1,14 @@
 .section-feature {
-    &__list  {
-        @include centeredFlex();
-        & li+li {
-            margin-left: 30px;
-        }
-    }
-    &__item {
-        width: 270px;
-    }
     &__thumb {
         @include centeredFlex();
         height: 120px;
         margin-bottom: 30px;
         border-radius: 4px;
         background-color: $team-background-color;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }
     }
     &__title {
         font-weight: 700;
@@ -22,10 +17,29 @@
         text-transform: uppercase;
         color: $main-headers-color;
         margin-bottom: 10px;
+        
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
     &__text {
         font-size: 14px;
         line-height: 1.71;
         color: $main-text-color;
+    }
+    &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+    &__item {
+        @media screen and (min-width: 768px) {
+            flex: 1 1 calc((100% / 2) - 30px);
+        }
+        @media screen and (min-width: 1200px) {
+            flex: 1 1 calc((100% / 4) - 30px);
+        }
     }
 }

@@ -1,13 +1,20 @@
 .section-clients {
     &__list {
         @include centeredFlex();
-        & li + li {
-                margin-left: 30px;
-            }
+        flex-wrap: wrap;
+        gap: 30px;
     }
     &__item {
-        width: 170px;
+        flex: 1 1 calc((100% / 2) - 30px);
         height: 92px;
+
+        @media screen and (min-width: 768px) {
+            flex: 1 1 calc((100% / 3) - 30px);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex: 1 1 calc((100% / 6) - 30px);
+        }
     }
     &__link {
         @include centeredFlex();

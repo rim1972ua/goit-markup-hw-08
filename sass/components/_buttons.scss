@@ -32,12 +32,11 @@
 }
 
 .filter {
-    @include centeredFlex();
-    margin-bottom: 50px;
-    justify-content: center;
-    
-    & li + li {
-        margin-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
     }
     
     &__button {
@@ -49,9 +48,19 @@
         line-height: 1.63;
         letter-spacing: 0.03em;
         padding: 6px 22px;
+        margin-right: 8px;
+        margin-bottom: 15px;
         transition-property: background-color, color, box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
         
         &:hover,
         &:focus,
