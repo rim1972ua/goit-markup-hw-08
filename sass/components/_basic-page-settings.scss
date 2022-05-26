@@ -9,6 +9,10 @@ body {
     letter-spacing: 0.03em;
     color: $main-text-color;
     background-color: $accent-white-color;
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 
 img {
