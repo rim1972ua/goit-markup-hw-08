@@ -15,32 +15,47 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <nav class="header__nav">
-                <a class="logo" href="./">Web<span class="logo-black">Studio</span></a>
-                <ul class="header__main-menu">
-                    <li><a class="header__menu-item" href="./index.html">Студия</a></li>
-                    <li><a class="header__menu-item header__menu-item--current" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="header__menu-item" href="">Контакты</a></li>
+            <a class="logo" href="./">Web<span class="logo-black">Studio</span></a>
+            <button data-menu-button type="button" class="menu-button is-open" aria-expanded="false"
+                aria-controls="menu-container">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="icon-cross" href="./images/icons.svg#close-menu"></use>
+                    <use class="icon-menu" href="./images/icons.svg#mobile-menu"></use>
+                </svg>
+            </button>
+            <div data-menu class="menu-container is-open" id="menu-container">
+                <nav class="header__nav">
+                    <ul class="header__main-menu">
+                        <li><a class="header__menu-item" href="./index.html">Студия</a></li>
+                        <li><a class="header__menu-item header__menu-item--current" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="header__menu-item" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-address">
+                    <li>
+                        <a class="header-address__item tel" href="+380961111111">
+                            <svg width="10px" height="16px" class="header-address__icon">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header-address__item mail" href="info@devstudio.com">
+                            <svg width="16" height="12" class="header-address__icon">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="header-address">
-                <li>
-                    <a class="header-address__item" href="info@devstudio.com">
-                        <svg width="16" height="12" class="header-address__icon">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <a class="header-address__item" href="+380961111111">
-                        <svg width="10px" height="16px" class="header-address__icon">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <ul class="menu-social">
+                    <li><a class="menu-social__item" href="">Instagram</a></li>
+                    <li><a class="menu-social__item" href="">Twitter</a></li>
+                    <li><a class="menu-social__item" href="">Facebook</a></li>
+                    <li><a class="menu-social__item" href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -238,5 +253,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

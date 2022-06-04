@@ -15,32 +15,7 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <nav class="header__nav">
-                <a class="logo" href="./">Web<span class="logo-black">Studio</span></a>
-                <ul class="header__main-menu">
-                    <li><a class="header__menu-item header__menu-item--current" href="./index.html">Студия</a></li>
-                    <li><a class="header__menu-item" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="header__menu-item" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="header-address">
-                <li>
-                    <a class="header-address__item" href="info@devstudio.com">
-                        <svg width="16" height="12" class="header-address__icon">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <a class="header-address__item" href="+380961111111">
-                        <svg width="10px" height="16px" class="header-address__icon">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <a class="logo" href="./">Web<span class="logo-black">Studio</span></a>
             <button data-menu-button type="button" class="menu-button is-open"
                 aria-expanded="false" aria-controls="menu-container">
                 <svg width="40" height="40" aria-label="Перемикач мобільного меню">
@@ -48,12 +23,40 @@
                     <use class="icon-menu" href="./images/icons.svg#mobile-menu"></use>
                 </svg>
             </button>
+            <div data-menu class="menu-container is-open" id="menu-container">
+                <nav class="header__nav">
+                    <ul class="header__main-menu">
+                        <li><a class="header__menu-item header__menu-item--current" href="./index.html">Студия</a></li>
+                        <li><a class="header__menu-item" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="header__menu-item" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-address">
+                    <li>
+                        <a class="header-address__item tel" href="+380961111111">
+                            <svg width="10px" height="16px" class="header-address__icon">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header-address__item mail" href="info@devstudio.com">
+                            <svg width="16" height="12" class="header-address__icon">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-social">
+                    <li><a class="menu-social__item" href="">Instagram</a></li>
+                    <li><a class="menu-social__item" href="">Twitter</a></li>
+                    <li><a class="menu-social__item" href="">Facebook</a></li>
+                    <li><a class="menu-social__item" href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
-        <!-- тимчасовий контейнер для меню -->
-        <div data-menu class="menu-container is-open" id="menu-container">
-            Меню
-        </div>
-        <!-- тимчасовий контейнер для меню -->
    </header>
     <main>
         <section class="section hero-section">
@@ -112,15 +115,30 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="section-work__list">
                     <li class="section-work__item">
-                        <img src="./images/coding-opt.jpg" alt="Програми" width="370">
+                        <img
+                        srcset="./images/desktop-applications-370.jpg 1x, ./images/desktop-applications-370@2x.jpg 2x"
+                        src="./images/desktop-applications-370.jpg"
+                        alt="Програми"
+                        width="370"
+                        />
                         <p class="section-work__description">Десктопные приложения</p>
                     </li>
                     <li class="section-work__item">
-                        <img src="./images/mobile-opt.jpg" alt="Додатки" width="370">
+                        <img
+                        srcset="./images/mobile-applications-370.jpg 1x, ./images/mobile-applications-370@2x.jpg 2x"
+                        src="./images/mobile-applications-370.jpg"
+                        alt="Додатки"
+                        width="370"
+                        />
                         <p class="section-work__description">Мобильные приложения</p>
                     </li>
                     <li class="section-work__item">
-                        <img src="./images/design-opt.jpg" alt="Дизайн" width="370">
+                        <img
+                        srcset="./images/design-solutions-370.jpg 1x, ./images/design-solutions-370@2x.jpg 2x"
+                        src="./images/design-solutions-370.jpg"
+                        alt="Дизайн"
+                        width="370"
+                        />
                         <p class="section-work__description">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -131,7 +149,19 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="section-team__list">
                     <li class="section-team__item">
-                        <img src="./images/igor-mob.jpg" alt="Игорь Демьяненко" width="460">
+                        <img
+                        srcset="
+                        igor-450.jpg 480w,
+                        igor-450@2x.jpg 960w,
+                        igor-354.jpg 768w,
+                        igor-354@2x.jpg 1536w,
+                        igor-270.jpg 1200w,
+                        igor-270@2x.jpg 2400w
+                        "
+                        src="./images/igor-450.jpg"
+                        alt="Игорь Демьяненко"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                        />
                         <div class="section-team__member">
                             <h3 class="section-team__name">Игорь Демьяненко</h3>
                             <p class="section-team__role">Product Designer</p>
@@ -168,7 +198,7 @@
                         </div>
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/olga-mob.jpg" alt="Ольга Репина" width="460">
+                        <img src="./images/olga-450.jpg" alt="Ольга Репина" width="460">
                         <div class="section-team__member">
                             <h3 class="section-team__name">Ольга Репина</h3>
                             <p class="section-team__role">Frontend Developer</p>
@@ -205,7 +235,7 @@
                         </div>
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/mykola-mob.jpg" alt="Николай Тарасов" width="460">
+                        <img src="./images/mykola-450.jpg" alt="Николай Тарасов" width="460">
                         <div class="section-team__member">
                             <h3 class="section-team__name">Николай Тарасов</h3>
                             <p class="section-team__role">Marketing</p>
@@ -242,7 +272,7 @@
                         </div>
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/myhaylo-mob.jpg" alt="Михаил Ермаков" width="460">
+                        <img src="./images/myhaylo-450.jpg" alt="Михаил Ермаков" width="460">
                         <div class="section-team__member">
                             <h3 class="section-team__name">Михаил Ермаков</h3>
                             <p class="section-team__role">UI Designer</p>
@@ -370,7 +400,7 @@
             </div>
             <div class="subscribe">
                 <p class="subscribe__invite">Подпишитесь на рассылку</p>
-                <form name="subscribe_form" autocomplete="off" action="">
+                <form class="subscribe__form" name="subscribe_form" autocomplete="off" action="">
                     <label class="subscribe__lable">
                         <input class="subscribe__input" type="email" name="email" placeholder="E-mail">
                     </label>

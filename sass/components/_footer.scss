@@ -1,48 +1,82 @@
 .footer {
     background-color: $footer-background-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
+
     &-container {
-        @include centeredFlex($align: baseline);
+        text-align: center;
     }
-    &__links {
-        margin-right: 70px;
-    }
+
     &__logo {
         display: block;
         margin-bottom: 20px;
     }
-}
 
-.footer-address {
-    & li + li {
-        margin-top: 9px;
+    &-address {
+        margin-bottom: 60px;
+
+        & li+li {
+            margin-top: 8px;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 9px;
+        }
+        }
+    
+        &__item {
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.71;
+            text-decoration: none;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &--address {
+                color: $accent-white-color;
+            }
+    
+            &--link,
+            &--tel {
+                color: rgba(255, 255, 255, 0.6);
+            }
+    
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
     }
-    &__item {
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.71;
-        text-decoration: none;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &--address {
-            color: $accent-white-color;
+
+    @media screen and (min-width: 768px) {
+        &-container {
+            @include centeredFlex($align: baseline);
+            flex-wrap: wrap;
         }
-        &--link,
-        &--tel {
-            color: rgba(255, 255, 255, 0.6);
+        &__links {
+            display: inline-block;
+            margin-left: 76;
+            margin-right: 165px;
         }
-        
-        &:hover,
-        &:focus {
-            color: $accent-color;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
+        &-container {
+            text-align: left;
         }
+    
+        &__links {
+            margin-right: 70px;
+            margin-left: 0;
+        }        
     }
 }
 
 .social {
-    & a + a {
+    margin-bottom: 60px;
+    & a+a {
         margin-left: 6px;
     }
+
     &__invite {
         font-weight: 700;
         font-size: 14px;
@@ -61,6 +95,7 @@
         width: 44px;
         height: 44px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
         &:hover,
         &:focus {
             background-color: $buttom-bg-hover-color;
@@ -69,25 +104,37 @@
 
     &__icon {
         fill: $accent-white-color;
-        margin-left: 12px;
         margin-top: 12px;
+        @media screen and (min-width: 1200px) {
+            margin-left: 12px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: inline-block;
     }
 }
 
 .subscribe {
     display: inline-block;
     margin-left: auto;
+
     &__invite {
-        margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $accent-white-color;
+
+        @media screen and (min-width: 1200px) {
+                margin-bottom: 20px;
+            }
     }
+    
     &__input {
-        width: 358px;
+        display: block;
+        width: 450px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -97,5 +144,23 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         padding-left: 16px;
+        margin: 20px auto;
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+        &__form {
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
     }
 }
