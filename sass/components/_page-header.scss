@@ -212,3 +212,15 @@
         color: $accent-color;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .tel .header-address__icon {
+        width: 10px;
+        height: 16px;
+    }
+
+    .mail .header-address__icon {
+        width: 16px;
+        height: 12px;
+    }
+}
