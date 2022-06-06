@@ -1345,6 +1345,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .samples__item:last-child {
+    max-width: 354px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .samples__item {
     -webkit-box-flex: 1;
