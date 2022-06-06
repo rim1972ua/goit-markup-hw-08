@@ -73,7 +73,19 @@
                     <li class="samples__item">
                         <a class="samples__link" href="">
                             <div class="samples__thumb">
-                            <img src="./images/technocrack-450.jpg" alt="Технокряк" width="450">
+                            <img
+                            srcset="
+                            ./images/technocrack-450.jpg 480w,
+                            ./images/technocrack-450@2x.jpg 960w,
+                            ./images/technocrack-354.jpg 768w,
+                            ./images/technocrack-354@2x.jpg 1536w,
+                            ./images/technocrack-370.jpg 1200w,
+                            ./images/technocrack-370@2x.jpg 2400w
+                            "
+                            src="./images/technocrack-450.jpg"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            alt="Технокряк"
+                            />
                             <p class="samples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
                             </div>

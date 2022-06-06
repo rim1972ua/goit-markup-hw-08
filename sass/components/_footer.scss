@@ -154,11 +154,12 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: auto;
     }
-
+    
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
         &__form {
             display: flex;
+            flex-wrap: nowrap;
             align-items: center;
             height: 50px;
         }
