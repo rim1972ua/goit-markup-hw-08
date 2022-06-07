@@ -200,8 +200,10 @@
         
         &.is-open {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
             align-content: stretch;
+            padding-bottom: 48px;
 
             & body {
                 overflow: hidden;
