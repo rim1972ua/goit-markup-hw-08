@@ -42,7 +42,7 @@ body {
   }
 }
 
-body.modal-open {
+body.modal-open, body.is-open {
   overflow: hidden;
 }
 
@@ -103,11 +103,19 @@ img {
 
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+    line-height: 1.17;
+  }
 }
 
 .logo {
@@ -436,8 +444,6 @@ img {
 }
 
 .menu-button {
-  position: fixed;
-  right: 15px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -479,13 +485,14 @@ img {
 
 .menu-container {
   font-weight: 500;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: fixed;
     z-index: 1;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -500,6 +507,9 @@ img {
   }
   .menu-container.is-open {
     display: block;
+  }
+  .menu-container.is-open body {
+    overflow: hidden;
   }
 }
 

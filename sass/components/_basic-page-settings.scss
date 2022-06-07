@@ -14,7 +14,7 @@ body {
         overflow-x: hidden;
     }
 
-    &.modal-open {
+    &.modal-open, &.no-scroll {
         overflow: hidden;
     }
 }
@@ -67,9 +67,15 @@ img {
 
 .section-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     color: $main-headers-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+        line-height: 1.17;
+    }
 }
