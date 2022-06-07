@@ -22,10 +22,16 @@
         
         @media screen and (min-width: 768px) {
             @include centeredFlex();
-            margin-left: 88px;
+            margin-right: 34px;
             font-size: 14px;
             line-height: 1.14;
         }
+
+        @media screen and (min-width: 1200px) {
+            @include centeredFlex();
+            margin-right: 255px;
+        }
+
     }
     
     &__menu-item {
