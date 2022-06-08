@@ -29,7 +29,7 @@
 
         @media screen and (min-width: 1200px) {
             @include centeredFlex();
-            margin-right: 255px;
+            margin-right: 195px;
         }
 
     }
@@ -191,6 +191,10 @@ body.modal-open .menu-button {
 button.menu-button.is-open {
     position: fixed;
     right: 15px;
+
+    & body {
+        overflow: hidden;
+    }
 }
 
 .menu-container {

@@ -127,6 +127,14 @@ img {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .logo-black {
   color: #000;
 }
@@ -312,7 +320,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 255px;
+    margin-right: 195px;
   }
 }
 
@@ -515,6 +523,10 @@ body.modal-open .menu-button {
 button.menu-button.is-open {
   position: fixed;
   right: 15px;
+}
+
+button.menu-button.is-open body {
+  overflow: hidden;
 }
 
 .menu-container {
