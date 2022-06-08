@@ -116,8 +116,10 @@
 }
 
 .subscribe {
-    display: inline-block;
-    margin-left: auto;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: inline-block;
+        margin-left: auto;
+    }
 
     &__invite {
         font-weight: 700;
