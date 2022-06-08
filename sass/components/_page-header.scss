@@ -171,6 +171,10 @@
     }
 }
 
+body.modal-open .menu-button {
+    z-index: 0;
+}
+
 .menu-button .icon-cross {
     display: none;
 }
@@ -182,6 +186,11 @@
 .menu-button.is-open .icon-menu,
 .menu-button.is-open .header__container.logo {
     display: none;
+}
+
+button.menu-button.is-open {
+    position: fixed;
+    right: 15px;
 }
 
 .menu-container {
