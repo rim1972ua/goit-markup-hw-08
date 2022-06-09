@@ -171,7 +171,12 @@ img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 8px 29px;
-  margin-left: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .button-studio--subscribe {
+    margin-left: 12px;
+  }
 }
 
 .button-studio--modal {
