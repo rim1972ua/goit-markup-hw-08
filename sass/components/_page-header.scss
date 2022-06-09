@@ -39,6 +39,12 @@
         text-decoration: none;
         display: block;
         padding-bottom: 32px;
+
+        @media screen and (max-width: 767px) {
+            &.last {
+                padding-bottom: 0;
+            }
+        }
         
         @media screen and (min-width: 768px) {
             position: relative;
